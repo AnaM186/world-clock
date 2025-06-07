@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World clock</title>
+
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.min.js"></script>
+    <title>World clock</title>
   </head>
   <body>
     <div class="container">
@@ -17,31 +20,32 @@
       </select>
       <div class="city">
         <div>
-          <h2>Barcelona 🇪🇸</h2>
-          <div class="date">June 6th 2025</div>
+          <h2>Vancouver 🇨🇦</h2>
+          <div class="date" id="vancouver-date"></div>
         </div>
-        <div class="time">1:14:45 <small>PM</small></div>
+        <div class="time" id="vancouver-time"></div>
       </div>
       <div class="city">
         <div>
-          <h2>Vancouver 🇨🇦</h2>
-          <div class="date">June 6th 2025</div>
+          <h2>Barcelona 🇪🇸</h2>
+          <div class="date" id="barcelona-date"></div>
         </div>
-        <div class="time">1:14:45 <small>PM</small></div>
+        <div class="time" id="barcelona-time"></div>
       </div>
       <div class="city">
         <div>
           <h2>Jakarta 🇮🇩</h2>
-          <div class="date">June 6th 2025</div>
+          <div class="date" id="jakarta-date"></div>
         </div>
-        <div class="time">1:14:45 <small>PM</small></div>
+        <div class="time" id="jakarta-time"></div>
       </div>
     </div>
 
     <footer>
-      This project was coded with ❤ by
-      <a href="https://github.com/AnaM186" target="_blank">Ana Moskalenko</a>
-      and is open-souced on
+      This project was coded with ❤️ by
+      <a href="https://github.com/AnaM186" target="_blank">Ana Moskalenko</a>,
+      <br />
+      open-souced on
       <a href="https://github.com/AnaM186/world-clock" target="_blank"
         >GitHub</a
       >
