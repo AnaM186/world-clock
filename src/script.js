@@ -38,7 +38,10 @@ setInterval(displayTime, 1000);
 
 function displayCity(event) {
   let chosenCity = event.target.value;
-  let city = chosenCity.split("/")[1];
+  if (chosenCity === "current") {
+    chosenCity = moment.tz.guess();
+  }
+  let city = chosenCity.replace("_", " ").split("/")[1];
   let date = moment().format("MMMM Do YYYY");
   let time = moment().tz(chosenCity).format("h:mm:ss [<small>]A[</small>]");
   let cityContainer = document.querySelector("#city-container");
