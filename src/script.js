@@ -51,7 +51,8 @@ function displayCity(event) {
             <div class="date">${date}</div>
           </div>
           <div class="time">${time}</div>
-        </div>`;
+        </div>
+        <a href="index.html">All cities</a>`;
 }
 
 let selectCityElement = document.querySelector("#select-city");
