@@ -1,30 +1,33 @@
 function displayTime() {
-  let vancouverDateElement = document.querySelector("#vancouver-date");
-  if (vancouverDateElement) {
+  //Vancouver
+  let vancouverElement = document.querySelector("#vancouver");
+  if (vancouverElement) {
+    let vancouverDateElement = document.querySelector("#vancouver .date");
+    let vancouverTimeElement = document.querySelector("#vancouver .time");
+
     vancouverDateElement.innerHTML = moment().format("MMMM Do YYYY");
-  }
-  let vancouverTimeElement = document.querySelector("#vancouver-time");
-  if (vancouverTimeElement) {
     vancouverTimeElement.innerHTML = moment()
       .tz("America/Vancouver")
       .format("h:mm:ss [<small>]A[</small>]");
   }
-  let barcelonaDateElement = document.querySelector("#barcelona-date");
-  if (barcelonaDateElement) {
+  //Barcelona
+  let barcelonaElement = document.querySelector("#barcelona");
+  if (barcelonaElement) {
+    let barcelonaDateElement = document.querySelector("#barcelona .date");
+    let barcelonaTimeElement = document.querySelector("#barcelona .time");
+
     barcelonaDateElement.innerHTML = moment().format("MMMM Do YYYY");
-  }
-  let barcelonaTimeElement = document.querySelector("#barcelona-time");
-  if (barcelonaTimeElement) {
     barcelonaTimeElement.innerHTML = moment()
       .tz("Europe/Madrid")
       .format("h:mm:ss [<small>]A[</small>]");
   }
-  let jakartaDateElement = document.querySelector("#jakarta-date");
-  if (jakartaDateElement) {
+  //Jakarta
+  let jakartaElement = document.querySelector("#jakarta");
+  if (jakartaElement) {
+    let jakartaDateElement = document.querySelector("#jakarta .date");
+    let jakartaTimeElement = document.querySelector("#jakarta .time");
+
     jakartaDateElement.innerHTML = moment().format("MMMM Do YYYY");
-  }
-  let jakartaTimeElement = document.querySelector("#jakarta-time");
-  if (jakartaTimeElement) {
     jakartaTimeElement.innerHTML = moment()
       .tz("Asia/Jakarta")
       .format("h:mm:ss [<small>]A[</small>]");
